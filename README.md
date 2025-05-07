@@ -70,7 +70,7 @@ web-tech-classwork/               # Main folder for Web Technology classwork
 
 ---
 **Instructor**: Yogesh Sir  
-**Subject**: Web Technology  (CS157)
+**Subject**: Web Technology  (CS157) <br>
 **Course**: B-tech-CSE (1st Year / 2nd Semester)
 
 ---
