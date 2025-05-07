@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logic Gate Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Logic Gate Simulator</h1>
+
+    <div class="simulator">
+        <label>
+            Input A:
+            <input type="checkbox" id="inputA">
+        </label>
+
+        <label>
+            Input B:
+            <input type="checkbox" id="inputB">
+        </label>
+
+        <label>
+            Select Gate:
+            <select id="gate">
+                <option value="AND">AND</option>
+                <option value="OR">OR</option>
+                <option value="NOT">NOT (only A)</option>
+                <option value="NAND">NAND</option>
+                <option value="NOR">NOR</option>
+                <option value="XOR">XOR</option>
+                <option value="XNOR">XNOR</option>
+            </select>
+        </label>
+
+        <div class="output">
+            Output: <span id="output">0</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

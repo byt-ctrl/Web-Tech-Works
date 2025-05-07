@@ -1,0 +1,155 @@
+/* style.css for timetable */
+
+
+body 
+{
+    font-family:Arial,sans-serif;
+    margin:0;
+    padding:20px;
+}
+
+.container 
+{
+    max-width:1500px;
+    margin:0 auto;
+}
+
+.header 
+{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.logo-area 
+{
+    width:100px;
+}
+
+.logo 
+{
+    width:auto;
+    height:auto;
+    background-color:#f8f8f8; 
+}
+
+.title-area 
+{
+    flex-grow:1;
+    text-align:center;
+}
+
+h1 
+{
+    font-size:24px;
+    margin:0;
+}
+
+.info-section 
+{
+    display:flex;
+    margin-bottom:10px;
+}
+
+.left-info,.right-info 
+{
+    flex:1;
+}
+
+.info-row 
+{
+    display:flex;
+    margin-bottom:10px;
+}
+
+.info-label 
+{
+    width:205px;
+    font-weight:normal;
+}
+
+.info-value 
+{
+    flex-grow:1;
+    border-bottom:1px solid black;
+}
+
+.first-year-title 
+{
+    text-align:center;
+    margin:15px 0;
+    font-weight:bold;
+}
+
+.date-highlight 
+{
+    color:red;
+}
+
+/* Timetable styles */
+.timetable,.subject-table 
+{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:20px;
+}
+
+.timetable th,.timetable td, 
+.subject-table td 
+{
+    border:1px solid black;
+    padding:6px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:14px;
+}
+
+.header-row th 
+{
+    background-color:#bfbfbf;
+    font-weight:bold;
+}
+
+.time-col 
+{
+    background-color:#bfbfbf;
+    font-weight:bold;
+    width:100px;
+}
+
+.particular-col 
+{
+    background-color:#bfbfbf;
+    font-weight:bold;
+    width:100px;
+}
+
+.lunch 
+{
+    text-align:center;
+    font-weight:bold;
+}
+
+/* Subject table styles */
+.subject-heading 
+{
+    text-align:center;
+    background-color:#bfbfbf;
+    padding:5px;
+    font-weight:bold;
+    border:1px solid black;
+}
+
+.subject-header td 
+{
+    background-color:#bfbfbf;
+    font-weight:bold;
+}
+
+.signature-row td 
+{
+    background-color:#bfbfbf;
+    font-weight: bold;
+}
+
+/* END */

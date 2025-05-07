@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Check</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, button {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      width: 100%;
+    }
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Password Verification</h2>
+
+  <input type="password" id="password" placeholder="Enter password">
+
+  <button onclick="checkPassword()">Check Password</button>
+
+  <p id="message"></p>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "admin123";
+      const enteredPassword = document.getElementById("password").value;
+      const messageElement = document.getElementById("message");
+
+      if (enteredPassword === "") {
+        messageElement.innerText = "Please enter a password.";
+        messageElement.style.color = "orange";
+        return;
+      }
+
+      if (enteredPassword === correctPassword) {
+        messageElement.innerText = "Access granted.";
+        messageElement.style.color = "green";
+      } else {
+        messageElement.innerText = "Incorrect password.";
+        messageElement.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>

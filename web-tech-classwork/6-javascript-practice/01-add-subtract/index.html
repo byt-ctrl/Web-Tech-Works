@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add & Subtract Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    label, input, button {
+      display: block;
+      margin: 10px 0;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+    }
+    button {
+      width: 150px;
+      padding: 8px;
+      margin-right: 10px;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h2>Add & Subtract Two Numbers</h2>
+
+  <label for="num1">Enter first number:</label>
+  <input type="number" id="num1" placeholder="e.g., 10">
+
+  <label for="num2">Enter second number:</label>
+  <input type="number" id="num2" placeholder="e.g., 5">
+
+  <button onclick="add()">Add</button>
+  <button onclick="subtract()">Subtract</button>
+
+  <p id="result">Result will be displayed here.</p>
+
+  <script>
+    function getNumbers() {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const num2 = parseFloat(document.getElementById("num2").value);
+
+      if (isNaN(num1) || isNaN(num2)) {
+        return null;
+      }
+      return [num1, num2];
+    }
+
+    function add() {
+      const numbers = getNumbers();
+      if (!numbers) {
+        document.getElementById("result").innerText = "Please enter both numbers.";
+        return;
+      }
+      const sum = numbers[0] + numbers[1];
+      document.getElementById("result").innerText = "Sum: " + sum;
+    }
+
+    function subtract() {
+      const numbers = getNumbers();
+      if (!numbers) {
+        document.getElementById("result").innerText = "Please enter both numbers.";
+        return;
+      }
+      const difference = numbers[0] - numbers[1];
+      document.getElementById("result").innerText = "Difference: " + difference;
+    }
+  </script>
+</body>
+</html>

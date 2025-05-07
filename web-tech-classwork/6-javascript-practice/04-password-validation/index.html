@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Strong Password Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    label, input {
+      display: block;
+      margin: 10px 0;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+    }
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
+    }
+    ul.rules {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    ul.rules li {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Password Validation Form</h2>
+
+  <form onsubmit="return validatePassword()">
+    <label for="password">Enter Password:</label>
+    <input type="password" id="password" placeholder="Password" required>
+
+    <label for="confirm">Confirm Password:</label>
+    <input type="password" id="confirm" placeholder="Re-enter Password" required>
+
+    <button type="submit">Submit</button>
+
+    <p id="message"></p>
+
+    <ul class="rules">
+      <li>At least 8 characters</li>
+      <li>At least 1 uppercase letter (A–Z)</li>
+      <li>At least 1 number (0–9)</li>
+      <li>At least 1 special character (!@#$%^&* etc.)</li>
+    </ul>
+  </form>
+
+  <script>
+    function validatePassword() {
+      const password = document.getElementById("password").value;
+      const confirm = document.getElementById("confirm").value;
+      const message = document.getElementById("message");
+      message.className = "";
+
+      // Regex patterns
+      const hasUppercase = /[A-Z]/;
+      const hasNumber = /[0-9]/;
+      const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/;
+
+      // Validation
+      if (password.length < 8) {
+        message.innerText = "Password must be at least 8 characters long.";
+        message.className = "error";
+        return false;
+      }
+
+      if (!hasUppercase.test(password)) {
+        message.innerText = "Password must include at least one uppercase letter.";
+        message.className = "error";
+        return false;
+      }
+
+      if (!hasNumber.test(password)) {
+        message.innerText = "Password must include at least one number.";
+        message.className = "error";
+        return false;
+      }
+
+      if (!hasSpecialChar.test(password)) {
+        message.innerText = "Password must include at least one special character.";
+        message.className = "error";
+        return false;
+      }
+
+      if (password !== confirm) {
+        message.innerText = "Passwords do not match.";
+        message.className = "error";
+        return false;
+      }
+
+      message.innerText = "Password is strong and matches.";
+      message.className = "success";
+      return true;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+1. Using Different Types of Bullets for Lists
+   - Use unordered (square, circle, disc) and ordered (a, A, i, I) list types.
+
+2. Nested List
+   - Create lists inside other lists using both ordered and unordered types.
+
+3. Formatting in HTML
+   - Use bold, italic, underline, subscript, superscript, etc.
+
+4. Timetable
+   - Create a timetable using an HTML table with proper headers and rows.
+
+5. Ex2.html
+   - Create a static webpage using simple tags like paragraphs and lists.
+
+6. CSS: Internal, External, Inline
+   - Demonstrate all three types of CSS.
+
+7. CSS: Div Styling
+   - Style divs with height, width, background, and borders.
+
+8. CSS in Timetable
+   - Apply CSS to enhance the timetable layout.
+
+9. Table - Unit 2
+   - Create a subject-related table with headings and merged cells.
+
+10. Navigation Hyperlink
+   - Use anchor tags for navigation between pages or sections.
+
+11. Frameset Example
+   - Split a page using frameset with navigation and content.
+
+12. Bulb Toggle
+   - JavaScript to turn a bulb image on and off.
+
+13. Logic Gate Simulation
+   - Simulate AND, OR, NOT gates using checkboxes and JS.
+
+14. JavaScript: Simple Addition & Subtraction
+   - Basic calculator using input fields and JS.
+
+15. JavaScript: Form Validation
+   - Validate name, email, etc. before form submission.
+
+16. JavaScript: Password Validation
+   - Check for empty, length, match, and show/hide password.

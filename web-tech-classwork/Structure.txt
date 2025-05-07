@@ -1,0 +1,36 @@
+.dump-codes/
+│
+1-html-basics/
+│
+├── 1-list-types/               # Different bullet/list styles (square, circle, disc, a, A, i, I)
+├── 2-nested-lists/             # Nested list examples
+├── 3-html-formatting/          # Bold, italic, underline, etc.
+├── 4-timetable/                # Timetable using HTML table
+├── 5-ex2-html/                 # ex2.html or other specific exercises
+│
+2-css-practice/
+│
+├── 1-css-overview/             # Internal, External, Inline CSS
+├── 2-css-divs/                 # Styling <div> with CSS
+├── 3-css-timetable/            # Applying CSS to the timetable
+│
+3-tables/
+│
+├── 1-unit2-table/              # Table-based content for Unit 2
+│
+4-navigation/
+│
+├── 1-nav-hyperlink/            # Navigation using hyperlinks
+├── 2-frameset-example/         # Frame-based layout
+│
+5-extras/
+│
+├── 1-bulb-toggle/              # Bulb on/off example using JavaScript
+├── 2-logic-gates-simulation/   # Logic gates simulation (new folder)
+│
+6-javascript-practice/
+│
+├── 1-add-subtract/             # Simple addition and subtraction in JS
+├── 2-form-validation/          # JS for form input validation
+├── 3-password-check/           # Password input and check logic
+├── 4-password-validation/      # Password validation (added as new folder)
